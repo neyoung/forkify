@@ -10,7 +10,10 @@
   },
   "author": "Ngozi Young",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",

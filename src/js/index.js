@@ -101,3 +101,26 @@ const controlRecipe = async () => {
 
 // How to add the same event listener to different events
 ['hashchange', 'load'].forEach(event => window.addEventListener(event, controlRecipe));
+
+/**
+ * LIKE CONTROLLER
+ */
+
+ // Handling recipe button clicks
+ elements.recipe.addEventListener('click', e => {
+     if (e.target.matches('.btn-decrease, .btn-decrease *')) {
+        // Decrease button is clicked
+        if (state.recipe.servings > 1) {
+            state.recipe.updateServings('dec');
+            recipeView.updateServingsIngredients(state.recipe);
+        }
+     } else if (e.target.matches('.btn-increase, .btn-increase *')) {
+         // Increase button is clicked
+         state.recipe.updateServings('inc');
+         recipeView.updateServingsIngredients(state.recipe);
+     } else if (e.target.matches('.recipe__btn--add, .recipe__btn--add *')) {
+         // List controller - Add ingridents to shopping list
+     } else if (e.target.matches('.recipe__love, .recipe__love *')) {
+         // Like controller
+     }
+ });

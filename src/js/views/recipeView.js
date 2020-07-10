@@ -102,7 +102,7 @@ export const renderRecipe = recipe => {
                 This recipe was carefully designed and tested by
                 <span class="recipe__by">${recipe.author}</span>. Please check out directions at their website.
             </p>
-            <a class="btn-small recipe__btn" href="h${recipe.url}" target="_blank">
+            <a class="btn-small recipe__btn" href="${recipe.url}" target="_blank">
                 <span>Directions</span>
                 <svg class="search__icon">
                     <use href="img/icons.svg#icon-triangle-right"></use>

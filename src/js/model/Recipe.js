@@ -92,7 +92,6 @@ export default class Recipe {
         });
 
         this.ingredients = newIngredients;  //objIng is assigned here
-        // console.log(this.ingredients); TODO: remove me
     }
 
     updateServings(type) {
